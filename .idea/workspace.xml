@@ -23,10 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796beed5-5e87-41c6-a233-4094f2f7d3a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/Tipsy.pm6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/t/tipsy.t" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/etipsy/Routes.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Routes.pm6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META6.json" beforeDir="false" afterPath="$PROJECT_DIR$/META6.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Routes.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Routes.pm6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/service.p6" beforeDir="false" afterPath="$PROJECT_DIR$/service.p6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/t/routes.t" beforeDir="false" afterPath="$PROJECT_DIR$/t/routes.t" afterDir="false" />
     </list>
@@ -47,6 +48,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -56,7 +58,7 @@
       <recent name="$PROJECT_DIR$/lib" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cro Service.service.p6">
     <configuration name="service.p6" type="PERL6_CRO_RUN_CONFIGURATION" factoryName="Cro Service">
       <SCRIPT_PATH>$PROJECT_DIR$/service.p6</SCRIPT_PATH>
       <SCRIPT_ARGS />
@@ -71,6 +73,18 @@
       <START_SUSPENDED>false</START_SUSPENDED>
       <method v="2" />
     </configuration>
+    <configuration name="Test project" type="PERL6_TEST_CONFIGURATION" factoryName="Raku test">
+      <TEST_KIND>ALL</TEST_KIND>
+      <PARALELLISM_DEGREE>1</PARALELLISM_DEGREE>
+      <ENVS />
+      <PASS_PARENT_ENV>true</PASS_PARENT_ENV>
+      <INTERPRETER_PARAMETERS>-Ilib</INTERPRETER_PARAMETERS>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Cro Service.service.p6" />
+      <item itemvalue="Raku test.Test project" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621180922595</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Stub JavaScript application">
+      <created>1621182603239</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621182603240</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -106,34 +127,40 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="Stub JavaScript application" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stub JavaScript application" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621179215303">
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621184982874">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1621179215303" />
-    <state width="1638" height="471" key="GridCell.Tab.0.bottom" timestamp="1621181988394">
+    <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1621184982874" />
+    <state x="628" y="284" key="FileChooserDialogImpl" timestamp="1621184820520">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="471" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
-    <state width="1638" height="471" key="GridCell.Tab.0.center" timestamp="1621181988394">
+    <state x="628" y="284" key="FileChooserDialogImpl/0.0.1680.1050@0.0.1680.1050" timestamp="1621184820520" />
+    <state width="1638" height="218" key="GridCell.Tab.0.bottom" timestamp="1621185998370">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="471" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
-    <state width="1638" height="471" key="GridCell.Tab.0.left" timestamp="1621181988394">
+    <state width="1638" height="218" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1621185998370" />
+    <state width="1638" height="218" key="GridCell.Tab.0.center" timestamp="1621185998369">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="471" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
-    <state width="1638" height="471" key="GridCell.Tab.0.right" timestamp="1621181988394">
+    <state width="1638" height="218" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1621185998369" />
+    <state width="1638" height="218" key="GridCell.Tab.0.left" timestamp="1621185998369">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="471" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
-    <state x="341" y="161" key="SettingsEditor" timestamp="1621180543495">
+    <state width="1638" height="218" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1621185998369" />
+    <state width="1638" height="218" key="GridCell.Tab.0.right" timestamp="1621185998369">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="161" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1621180543495" />
+    <state width="1638" height="218" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1621185998369" />
+    <state x="341" y="161" key="SettingsEditor" timestamp="1621184857114">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="341" y="161" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1621184857114" />
     <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1621180928182">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

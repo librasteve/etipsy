@@ -1,8 +1,9 @@
 use Cro::HTTP::Router;
 use Cro::HTTP::Router::WebSocket;
 use Cro::WebApp::Template;
+use Tipsy;
 
-sub routes() is export {
+sub routes(Tipsy $tipsy) is export {
     route {
         get -> {
             #content 'text/html', "<h1> etipsy </h1>";

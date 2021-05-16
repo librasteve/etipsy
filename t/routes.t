@@ -2,10 +2,13 @@ use Cro::HTTP::Test;
 use Test;
 use Routes;
 
-test-service routes, {
+use Tipsy;
+my $tipsy = Tipsy.new;
+
+test-service routes($tipsy), {
     test get('/'),
             status => 200,
-            body-text => '<h1> etipsy </h1>';
+            body-text => /zTipsy/;
 }
 
 done-testing;

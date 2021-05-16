@@ -10,7 +10,8 @@
   "depends": [
     "Cro::HTTP",
     "Cro::WebSocket",
-    "Cro::WebApp"
+    "Cro::WebApp",
+    "OO::Monitors"
   ],
   "build-depends": [],
   "test-depends": [
