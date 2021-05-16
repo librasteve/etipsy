@@ -23,17 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796beed5-5e87-41c6-a233-4094f2f7d3a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/META6.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/etipsy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/etipsy/Routes.pm6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service.p6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/t/routes.t" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/greet.crotmp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/etipsy/Routes.pm6" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Routes.pm6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service.p6" beforeDir="false" afterPath="$PROJECT_DIR$/service.p6" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t/routes.t" beforeDir="false" afterPath="$PROJECT_DIR$/t/routes.t" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,14 +39,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sa4OPRzkojGDWwvm62yNnD0AYT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="service.p6" type="PERL6_CRO_RUN_CONFIGURATION" factoryName="Cro Service">
@@ -78,7 +81,18 @@
       <option name="presentableId" value="Default" />
       <updated>1621097340577</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1621180922595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621180922595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -100,25 +114,33 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="184" y="109" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1621179215303" />
-    <state width="1638" height="223" key="GridCell.Tab.0.bottom" timestamp="1621180853437">
+    <state width="1638" height="471" key="GridCell.Tab.0.bottom" timestamp="1621181988394">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1621180853437" />
-    <state width="1638" height="223" key="GridCell.Tab.0.center" timestamp="1621180853437">
+    <state width="1638" height="471" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
+    <state width="1638" height="471" key="GridCell.Tab.0.center" timestamp="1621181988394">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1621180853437" />
-    <state width="1638" height="223" key="GridCell.Tab.0.left" timestamp="1621180853436">
+    <state width="1638" height="471" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
+    <state width="1638" height="471" key="GridCell.Tab.0.left" timestamp="1621181988394">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1621180853436" />
-    <state width="1638" height="223" key="GridCell.Tab.0.right" timestamp="1621180853437">
+    <state width="1638" height="471" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
+    <state width="1638" height="471" key="GridCell.Tab.0.right" timestamp="1621181988394">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1621180853437" />
+    <state width="1638" height="471" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1621181988394" />
     <state x="341" y="161" key="SettingsEditor" timestamp="1621180543495">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="161" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1621180543495" />
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2" timestamp="1621180928182">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="440" y="262" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1621180928182" />
+    <state x="633" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1621180907857">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="633" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1621180907857" />
   </component>
 </project>

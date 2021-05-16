@@ -5,7 +5,11 @@ use Cro::WebApp::Template;
 sub routes() is export {
     route {
         get -> {
-            content 'text/html', "<h1> etipsy </h1>";
+            #content 'text/html', "<h1> etipsy </h1>";
+            static 'static/index.html'
+        }
+        get -> 'js', *@path {
+            static 'static/js', @path
         }
 
         my $chat = Supplier.new;

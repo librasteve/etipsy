@@ -1,6 +1,6 @@
 use Cro::HTTP::Log::File;
 use Cro::HTTP::Server;
-use etipsy::Routes;
+use Routes;
 
 my Cro::Service $http = Cro::HTTP::Server.new(
     http => <1.1>,

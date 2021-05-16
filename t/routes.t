@@ -1,6 +1,6 @@
 use Cro::HTTP::Test;
 use Test;
-use etipsy::Routes;
+use Routes;
 
 test-service routes, {
     test get('/'),
